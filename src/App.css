@@ -1,0 +1,111 @@
+body, html, #root, .App {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1a1a2e;
+  color: #f5f5f5;
+}
+
+.App.dark-mode .advice-card {
+  background-color: #16213e;
+  color: #e8e8e8;
+}
+
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #1a1a2e;
+}
+
+.App.light-mode .advice-card {
+  background-color: #e0e5ec;
+  color: #333333;
+}
+
+.advice-card {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.advice-card h2 {
+  color: #38f3b7;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.advice-card p {
+  font-size: 1.25rem;
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+button {
+  background-color: #38f3b7;
+  color: #16213e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2bc59a;
+}
+
+.toggle-theme-button {
+  background-color: #555;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.App.light-mode .toggle-theme-button {
+  background-color: #ddd;
+  color: #333;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #38f3b7;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.translation-button {
+  background-color: #555;
+  color: #fff;
+  margin-top: 10px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.translation-button:hover {
+  background-color: #444; }
